@@ -1,1994 +1,1988 @@
-diff --git a/templates/dentist_template.json b/templates/dentist_template.json
-new file mode 100644
-index 0000000000000000000000000000000000000000..a66c7a06f81078fe5e3553e2381ce11bf7385ff2
---- /dev/null
-+++ b/templates/dentist_template.json
-@@ -0,0 +1,1988 @@
-+{
-+  "content": [
-+    {
-+      "id": "topbar",
-+      "settings": {
-+        "content_width": "boxed",
-+        "boxed_width": {
-+          "unit": "px",
-+          "size": 1160,
-+          "sizes": []
-+        },
-+        "flex_direction": "row",
-+        "flex_justify_content": "space-between",
-+        "flex_align_items": "center",
-+        "padding": {
-+          "unit": "px",
-+          "top": "12",
-+          "right": "0",
-+          "bottom": "12",
-+          "left": "0",
-+          "isLinked": false
-+        },
-+        "background_background": "classic",
-+        "background_color": "#0F172A"
-+      },
-+      "elements": [
-+        {
-+          "id": "topbar-left",
-+          "settings": {
-+            "content_width": "auto"
-+          },
-+          "elements": [
-+            {
-+              "id": "topbar-text",
-+              "settings": {
-+                "editor": "<p><strong>OdontoLume</strong> • Clínica boutique de sorrisos</p>",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 14,
-+                  "sizes": []
-+                },
-+                "color": "#E2E8F0"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "text-editor",
-+              "elType": "widget"
-+            }
-+          ],
-+          "isInner": true,
-+          "elType": "container"
-+        },
-+        {
-+          "id": "topbar-right",
-+          "settings": {
-+            "content_width": "auto",
-+            "flex_direction": "row",
-+            "flex_gap": {
-+              "unit": "px",
-+              "size": 18,
-+              "column": "18",
-+              "row": "18",
-+              "isLinked": true
-+            }
-+          },
-+          "elements": [
-+            {
-+              "id": "topbar-phone",
-+              "settings": {
-+                "editor": "<p><i class=\"fas fa-phone-alt\"></i> (11) 4002-8922</p>",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 14,
-+                  "sizes": []
-+                },
-+                "color": "#38BDF8"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "text-editor",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "topbar-hours",
-+              "settings": {
-+                "editor": "<p><i class=\"fas fa-clock\"></i> Seg-Sáb • 7h às 21h</p>",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 14,
-+                  "sizes": []
-+                },
-+                "color": "#F8FAFC"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "text-editor",
-+              "elType": "widget"
-+            }
-+          ],
-+          "isInner": true,
-+          "elType": "container"
-+        }
-+      ],
-+      "isInner": false,
-+      "elType": "container"
-+    },
-+    {
-+      "id": "hero",
-+      "settings": {
-+        "content_width": "boxed",
-+        "boxed_width": {
-+          "unit": "px",
-+          "size": 1180,
-+          "sizes": []
-+        },
-+        "min_height": {
-+          "unit": "px",
-+          "size": 640,
-+          "sizes": []
-+        },
-+        "padding": {
-+          "unit": "px",
-+          "top": "90",
-+          "right": "0",
-+          "bottom": "90",
-+          "left": "0",
-+          "isLinked": false
-+        },
-+        "flex_direction": "row",
-+        "flex_justify_content": "space-between",
-+        "flex_align_items": "center",
-+        "background_background": "gradient",
-+        "background_color": "#0B1120",
-+        "background_color_b": "#1E40AF",
-+        "background_gradient_angle": {
-+          "unit": "deg",
-+          "size": 120,
-+          "sizes": []
-+        },
-+        "shape_divider_bottom": "tilt",
-+        "shape_divider_bottom_color": "#FFFFFF"
-+      },
-+      "elements": [
-+        {
-+          "id": "hero-left",
-+          "settings": {
-+            "content_width": "full",
-+            "width": {
-+              "unit": "%",
-+              "size": 52,
-+              "sizes": []
-+            },
-+            "flex_direction": "column",
-+            "flex_align_items": "flex-start",
-+            "flex_gap": {
-+              "unit": "px",
-+              "size": 28,
-+              "column": "28",
-+              "row": "28",
-+              "isLinked": true
-+            }
-+          },
-+          "elements": [
-+            {
-+              "id": "hero-label",
-+              "settings": {
-+                "text": "Clínica boutique no coração de São Paulo",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 13,
-+                  "sizes": []
-+                },
-+                "typography_font_weight": "600",
-+                "text_color": "#0F172A",
-+                "background_color": "#F8FAFC",
-+                "padding": {
-+                  "unit": "px",
-+                  "top": "10",
-+                  "right": "20",
-+                  "bottom": "10",
-+                  "left": "20",
-+                  "isLinked": true
-+                },
-+                "border_radius": {
-+                  "unit": "px",
-+                  "top": "40",
-+                  "right": "40",
-+                  "bottom": "40",
-+                  "left": "40",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "button",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "hero-heading",
-+              "settings": {
-+                "title": "Transformamos o consultório em um spa do sorriso",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Playfair Display",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 60,
-+                  "sizes": []
-+                },
-+                "typography_line_height": {
-+                  "unit": "em",
-+                  "size": 1.1,
-+                  "sizes": []
-+                },
-+                "title_color": "#F8FAFC"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "heading",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "hero-desc",
-+              "settings": {
-+                "editor": "<p>Equipe feminina multidisciplinar, sedação consciente, scanners 3D e protocolos autorais que unem estética, saúde e acolhimento.</p>",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 18,
-+                  "sizes": []
-+                },
-+                "color": "#E2E8F0"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "text-editor",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "hero-cta",
-+              "settings": {
-+                "content_width": "auto",
-+                "flex_direction": "row",
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 18,
-+                  "column": "18",
-+                  "row": "18",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [
-+                {
-+                  "id": "hero-primary",
-+                  "settings": {
-+                    "text": "Agendar avaliação VIP",
-+                    "link": {
-+                      "url": "https://wa.me/5511999999999?text=Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o",
-+                      "is_external": "",
-+                      "nofollow": ""
-+                    },
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_weight": "600",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 16,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#38BDF8",
-+                    "hover_background_color": "#0EA5E9",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "50",
-+                      "right": "50",
-+                      "bottom": "50",
-+                      "left": "50",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "16",
-+                      "right": "36",
-+                      "bottom": "16",
-+                      "left": "36",
-+                      "isLinked": false
-+                    }
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "button",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "hero-secondary",
-+                  "settings": {
-+                    "text": "Tour virtual 360º",
-+                    "link": {
-+                      "url": "#tour",
-+                      "is_external": "",
-+                      "nofollow": ""
-+                    },
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_weight": "600",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 16,
-+                      "sizes": []
-+                    },
-+                    "background_color": "rgba(15,23,42,0)",
-+                    "border_width": {
-+                      "unit": "px",
-+                      "top": "2",
-+                      "right": "2",
-+                      "bottom": "2",
-+                      "left": "2",
-+                      "isLinked": true
-+                    },
-+                    "border_color": "#38BDF8",
-+                    "text_color": "#F8FAFC",
-+                    "hover_text_color": "#0EA5E9",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "50",
-+                      "right": "50",
-+                      "bottom": "50",
-+                      "left": "50",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "16",
-+                      "right": "30",
-+                      "bottom": "16",
-+                      "left": "30",
-+                      "isLinked": false
-+                    }
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "button",
-+                  "elType": "widget"
-+                }
-+              ]
-+            },
-+            {
-+              "id": "hero-stats",
-+              "settings": {
-+                "content_width": "auto",
-+                "flex_direction": "row",
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 24,
-+                  "column": "24",
-+                  "row": "24",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [
-+                {
-+                  "id": "stat-1",
-+                  "settings": {
-+                    "title": "+4200",
-+                    "title_color": "#F8FAFC",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 26,
-+                      "sizes": []
-+                    },
-+                    "description_text": "Sorrisos redesenhados",
-+                    "description_text_color": "#94A3B8"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "icon-box",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "stat-2",
-+                  "settings": {
-+                    "title": "98%",
-+                    "title_color": "#F8FAFC",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 26,
-+                      "sizes": []
-+                    },
-+                    "description_text": "Índice de satisfação",
-+                    "description_text_color": "#94A3B8"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "icon-box",
-+                  "elType": "widget"
-+                }
-+              ]
-+            }
-+          ]
-+        },
-+        {
-+          "id": "hero-right",
-+          "settings": {
-+            "content_width": "full",
-+            "width": {
-+              "unit": "%",
-+              "size": 44,
-+              "sizes": []
-+            },
-+            "flex_direction": "column",
-+            "flex_align_items": "center"
-+          },
-+          "elements": [
-+            {
-+              "id": "hero-photo",
-+              "settings": {
-+                "image": {
-+                  "url": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
-+                  "id": 1,
-+                  "size": "",
-+                  "alt": "Dentista com paciente",
-+                  "source": "library"
-+                },
-+                "image_size": "full",
-+                "border_radius": {
-+                  "unit": "px",
-+                  "top": "40",
-+                  "right": "40",
-+                  "bottom": "40",
-+                  "left": "40",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "image",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "hero-card",
-+              "settings": {
-+                "content_width": "full",
-+                "background_background": "classic",
-+                "background_color": "#F8FAFC",
-+                "border_radius": {
-+                  "unit": "px",
-+                  "top": "24",
-+                  "right": "24",
-+                  "bottom": "24",
-+                  "left": "24",
-+                  "isLinked": true
-+                },
-+                "padding": {
-+                  "unit": "px",
-+                  "top": "24",
-+                  "right": "24",
-+                  "bottom": "24",
-+                  "left": "24",
-+                  "isLinked": true
-+                },
-+                "margin": {
-+                  "unit": "px",
-+                  "top": "-60",
-+                  "right": "0",
-+                  "bottom": "0",
-+                  "left": "0",
-+                  "isLinked": false
-+                }
-+              },
-+              "elements": [
-+                {
-+                  "id": "hero-card-title",
-+                  "settings": {
-+                    "title": "Consulta acolhedora",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 20,
-+                      "sizes": []
-+                    },
-+                    "title_color": "#0F172A"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "heading",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "hero-card-text",
-+                  "settings": {
-+                    "editor": "<p>Espaço sensorial, manta térmica, playlist personalizada e aromaterapia para cada perfil.</p>",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 15,
-+                      "sizes": []
-+                    },
-+                    "color": "#475569"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "text-editor",
-+                  "elType": "widget"
-+                }
-+              ]
-+            }
-+          ]
-+        }
-+      ]
-+    },
-+    {
-+      "id": "services",
-+      "settings": {
-+        "background_background": "classic",
-+        "background_color": "#F8FAFC",
-+        "padding": {
-+          "unit": "px",
-+          "top": "110",
-+          "right": "0",
-+          "bottom": "110",
-+          "left": "0",
-+          "isLinked": false
-+        }
-+      },
-+      "elements": [
-+        {
-+          "id": "services-inner",
-+          "settings": {
-+            "content_width": "boxed",
-+            "boxed_width": {
-+              "unit": "px",
-+              "size": 1180,
-+              "sizes": []
-+            },
-+            "flex_direction": "column",
-+            "flex_gap": {
-+              "unit": "px",
-+              "size": 48,
-+              "column": "48",
-+              "row": "48",
-+              "isLinked": true
-+            }
-+          },
-+          "elements": [
-+            {
-+              "id": "services-header",
-+              "settings": {
-+                "content_width": "full",
-+                "flex_direction": "column",
-+                "flex_align_items": "center",
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 16,
-+                  "column": "16",
-+                  "row": "16",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [
-+                {
-+                  "id": "services-label",
-+                  "settings": {
-+                    "text": "Protocolos exclusivos",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 14,
-+                      "sizes": []
-+                    },
-+                    "typography_font_weight": "600",
-+                    "text_color": "#1E40AF",
-+                    "background_color": "rgba(30,64,175,0.12)",
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "8",
-+                      "right": "20",
-+                      "bottom": "8",
-+                      "left": "20",
-+                      "isLinked": true
-+                    },
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "30",
-+                      "right": "30",
-+                      "bottom": "30",
-+                      "left": "30",
-+                      "isLinked": true
-+                    }
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "button",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "services-title",
-+                  "settings": {
-+                    "title": "Planos desenhados para a sua rotina",
-+                    "align": "center",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Playfair Display",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 44,
-+                      "sizes": []
-+                    },
-+                    "title_color": "#0F172A"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "heading",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "services-text",
-+                  "settings": {
-+                    "editor": "<p>Da prevenção à reabilitação total, unimos ciência e sensibilidade para entregar resultados duradouros.</p>",
-+                    "align": "center",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 18,
-+                      "sizes": []
-+                    },
-+                    "color": "#475569"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "text-editor",
-+                  "elType": "widget"
-+                }
-+              ]
-+            },
-+            {
-+              "id": "services-cards",
-+              "settings": {
-+                "content_width": "full",
-+                "flex_direction": "row",
-+                "flex_wrap": "wrap",
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 28,
-+                  "column": "28",
-+                  "row": "28",
-+                  "isLinked": false
-+                },
-+                "flex_justify_content": "space-between"
-+              },
-+              "elements": [
-+                {
-+                  "id": "service-card-1",
-+                  "settings": {
-+                    "content_width": "full",
-+                    "width": {
-+                      "unit": "%",
-+                      "size": 48,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#FFFFFF",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "26",
-+                      "right": "26",
-+                      "bottom": "26",
-+                      "left": "26",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "32",
-+                      "right": "32",
-+                      "bottom": "32",
-+                      "left": "32",
-+                      "isLinked": true
-+                    },
-+                    "box_shadow_box_shadow": "yes",
-+                    "box_shadow_box_shadow_horizontal": 0,
-+                    "box_shadow_box_shadow_vertical": 18,
-+                    "box_shadow_box_shadow_blur": 50,
-+                    "box_shadow_box_shadow_spread": -24,
-+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
-+                  },
-+                  "elements": [
-+                    {
-+                      "id": "service-icon-1",
-+                      "settings": {
-+                        "selected_icon": {
-+                          "value": "fas fa-tooth",
-+                          "library": "fa-solid"
-+                        },
-+                        "icon_color": "#1E40AF",
-+                        "icon_size": {
-+                          "unit": "px",
-+                          "size": 36,
-+                          "sizes": []
-+                        }
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "icon",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-title-1",
-+                      "settings": {
-+                        "title": "OdontoSignature",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 22,
-+                          "sizes": []
-+                        },
-+                        "typography_font_weight": "600",
-+                        "title_color": "#0F172A"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "heading",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-desc-1",
-+                      "settings": {
-+                        "editor": "<p>Reabilitação oral com implantes guiados, coroas CAD/CAM e acompanhamento fotográfico profissional.</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 15,
-+                          "sizes": []
-+                        },
-+                        "color": "#475569"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    }
-+                  ]
-+                },
-+                {
-+                  "id": "service-card-2",
-+                  "settings": {
-+                    "content_width": "full",
-+                    "width": {
-+                      "unit": "%",
-+                      "size": 48,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#FFFFFF",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "26",
-+                      "right": "26",
-+                      "bottom": "26",
-+                      "left": "26",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "32",
-+                      "right": "32",
-+                      "bottom": "32",
-+                      "left": "32",
-+                      "isLinked": true
-+                    },
-+                    "box_shadow_box_shadow": "yes",
-+                    "box_shadow_box_shadow_horizontal": 0,
-+                    "box_shadow_box_shadow_vertical": 18,
-+                    "box_shadow_box_shadow_blur": 50,
-+                    "box_shadow_box_shadow_spread": -24,
-+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
-+                  },
-+                  "elements": [
-+                    {
-+                      "id": "service-icon-2",
-+                      "settings": {
-+                        "selected_icon": {
-+                          "value": "fas fa-smile-beam",
-+                          "library": "fa-solid"
-+                        },
-+                        "icon_color": "#1E40AF",
-+                        "icon_size": {
-+                          "unit": "px",
-+                          "size": 36,
-+                          "sizes": []
-+                        }
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "icon",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-title-2",
-+                      "settings": {
-+                        "title": "Luminous Smile",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 22,
-+                          "sizes": []
-+                        },
-+                        "typography_font_weight": "600",
-+                        "title_color": "#0F172A"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "heading",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-desc-2",
-+                      "settings": {
-+                        "editor": "<p>Lentes de contato cerâmicas ultrafinas, mockup digital e test-drive estético.</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 15,
-+                          "sizes": []
-+                        },
-+                        "color": "#475569"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    }
-+                  ]
-+                },
-+                {
-+                  "id": "service-card-3",
-+                  "settings": {
-+                    "content_width": "full",
-+                    "width": {
-+                      "unit": "%",
-+                      "size": 48,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#FFFFFF",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "26",
-+                      "right": "26",
-+                      "bottom": "26",
-+                      "left": "26",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "32",
-+                      "right": "32",
-+                      "bottom": "32",
-+                      "left": "32",
-+                      "isLinked": true
-+                    },
-+                    "box_shadow_box_shadow": "yes",
-+                    "box_shadow_box_shadow_horizontal": 0,
-+                    "box_shadow_box_shadow_vertical": 18,
-+                    "box_shadow_box_shadow_blur": 50,
-+                    "box_shadow_box_shadow_spread": -24,
-+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
-+                  },
-+                  "elements": [
-+                    {
-+                      "id": "service-icon-3",
-+                      "settings": {
-+                        "selected_icon": {
-+                          "value": "fas fa-teeth-open",
-+                          "library": "fa-solid"
-+                        },
-+                        "icon_color": "#1E40AF",
-+                        "icon_size": {
-+                          "unit": "px",
-+                          "size": 36,
-+                          "sizes": []
-+                        }
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "icon",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-title-3",
-+                      "settings": {
-+                        "title": "Align360",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 22,
-+                          "sizes": []
-+                        },
-+                        "typography_font_weight": "600",
-+                        "title_color": "#0F172A"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "heading",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-desc-3",
-+                      "settings": {
-+                        "editor": "<p>Alinhadores invisíveis com check-ins virtuais, sensores inteligentes e IA para ajustes.</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 15,
-+                          "sizes": []
-+                        },
-+                        "color": "#475569"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    }
-+                  ]
-+                },
-+                {
-+                  "id": "service-card-4",
-+                  "settings": {
-+                    "content_width": "full",
-+                    "width": {
-+                      "unit": "%",
-+                      "size": 48,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#FFFFFF",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "26",
-+                      "right": "26",
-+                      "bottom": "26",
-+                      "left": "26",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "32",
-+                      "right": "32",
-+                      "bottom": "32",
-+                      "left": "32",
-+                      "isLinked": true
-+                    },
-+                    "box_shadow_box_shadow": "yes",
-+                    "box_shadow_box_shadow_horizontal": 0,
-+                    "box_shadow_box_shadow_vertical": 18,
-+                    "box_shadow_box_shadow_blur": 50,
-+                    "box_shadow_box_shadow_spread": -24,
-+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
-+                  },
-+                  "elements": [
-+                    {
-+                      "id": "service-icon-4",
-+                      "settings": {
-+                        "selected_icon": {
-+                          "value": "fas fa-child",
-+                          "library": "fa-solid"
-+                        },
-+                        "icon_color": "#1E40AF",
-+                        "icon_size": {
-+                          "unit": "px",
-+                          "size": 36,
-+                          "sizes": []
-+                        }
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "icon",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-title-4",
-+                      "settings": {
-+                        "title": "Wellness Kids",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 22,
-+                          "sizes": []
-+                        },
-+                        "typography_font_weight": "600",
-+                        "title_color": "#0F172A"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "heading",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "service-desc-4",
-+                      "settings": {
-+                        "editor": "<p>Odontopediatria lúdica, sedação inalatória e educação digital para famílias.</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 15,
-+                          "sizes": []
-+                        },
-+                        "color": "#475569"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    }
-+                  ]
-+                }
-+              ]
-+            }
-+          ]
-+        }
-+      ]
-+    },
-+    {
-+      "id": "journey",
-+      "settings": {
-+        "background_background": "classic",
-+        "background_color": "#FFFFFF",
-+        "padding": {
-+          "unit": "px",
-+          "top": "100",
-+          "right": "0",
-+          "bottom": "100",
-+          "left": "0",
-+          "isLinked": false
-+        }
-+      },
-+      "elements": [
-+        {
-+          "id": "journey-inner",
-+          "settings": {
-+            "content_width": "boxed",
-+            "boxed_width": {
-+              "unit": "px",
-+              "size": 1180,
-+              "sizes": []
-+            },
-+            "flex_direction": "row",
-+            "flex_gap": {
-+              "unit": "px",
-+              "size": 48,
-+              "column": "48",
-+              "row": "48",
-+              "isLinked": true
-+            }
-+          },
-+          "elements": [
-+            {
-+              "id": "journey-left",
-+              "settings": {
-+                "content_width": "full",
-+                "width": {
-+                  "unit": "%",
-+                  "size": 46,
-+                  "sizes": []
-+                },
-+                "flex_direction": "column",
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 20,
-+                  "column": "20",
-+                  "row": "20",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [
-+                {
-+                  "id": "journey-title",
-+                  "settings": {
-+                    "title": "Uma jornada desenhada para você relaxar",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Playfair Display",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 42,
-+                      "sizes": []
-+                    },
-+                    "title_color": "#0F172A"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "heading",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "journey-text",
-+                  "settings": {
-+                    "editor": "<p>Nosso concierge acompanha cada etapa com atenção plena, enquanto tecnologias silenciosas e ambientes sensoriais garantem uma experiência memorável.</p>",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 17,
-+                      "sizes": []
-+                    },
-+                    "color": "#475569"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "text-editor",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "journey-cta",
-+                  "settings": {
-+                    "text": "Falar com concierge",
-+                    "link": {
-+                      "url": "https://wa.me/5511999999999?text=Gostaria%20de%20saber%20mais%20sobre%20a%20experi%C3%AAncia%20OdontoLume",
-+                      "is_external": "",
-+                      "nofollow": ""
-+                    },
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_weight": "600",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 16,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#0F172A",
-+                    "hover_background_color": "#1E293B",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "50",
-+                      "right": "50",
-+                      "bottom": "50",
-+                      "left": "50",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "16",
-+                      "right": "34",
-+                      "bottom": "16",
-+                      "left": "34",
-+                      "isLinked": false
-+                    }
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "button",
-+                  "elType": "widget"
-+                }
-+              ]
-+            },
-+            {
-+              "id": "journey-right",
-+              "settings": {
-+                "content_width": "full",
-+                "width": {
-+                  "unit": "%",
-+                  "size": 54,
-+                  "sizes": []
-+                },
-+                "flex_direction": "column",
-+                "background_background": "classic",
-+                "background_color": "#0F172A",
-+                "border_radius": {
-+                  "unit": "px",
-+                  "top": "32",
-+                  "right": "32",
-+                  "bottom": "32",
-+                  "left": "32",
-+                  "isLinked": true
-+                },
-+                "padding": {
-+                  "unit": "px",
-+                  "top": "40",
-+                  "right": "40",
-+                  "bottom": "40",
-+                  "left": "40",
-+                  "isLinked": true
-+                },
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 28,
-+                  "column": "28",
-+                  "row": "28",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [
-+                {
-+                  "id": "journey-step-1",
-+                  "settings": {
-+                    "title": "Recepção com spa sensorial",
-+                    "title_color": "#F8FAFC",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 20,
-+                      "sizes": []
-+                    },
-+                    "description_text": "Check-in com chás autorais, óleos essenciais e personalização do ambiente.",
-+                    "description_text_color": "#CBD5F5",
-+                    "icon_view": "stacked",
-+                    "icon_shape": "circle",
-+                    "icon_color": "#38BDF8",
-+                    "selected_icon": {
-+                      "value": "fas fa-check",
-+                      "library": "fa-solid"
-+                    }
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "icon-box",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "journey-step-2",
-+                  "settings": {
-+                    "title": "Diagnóstico holístico",
-+                    "title_color": "#F8FAFC",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 20,
-+                      "sizes": []
-+                    },
-+                    "description_text": "Scanner intraoral, raio-x panorâmico silencioso e análise postural.",
-+                    "description_text_color": "#CBD5F5",
-+                    "icon_view": "stacked",
-+                    "icon_shape": "circle",
-+                    "icon_color": "#38BDF8",
-+                    "selected_icon": {
-+                      "value": "fas fa-check",
-+                      "library": "fa-solid"
-+                    }
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "icon-box",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "journey-step-3",
-+                  "settings": {
-+                    "title": "Plano contínuo",
-+                    "title_color": "#F8FAFC",
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 20,
-+                      "sizes": []
-+                    },
-+                    "description_text": "Aplicativo exclusivo, teleconsultas e revisões sem custo por 12 meses.",
-+                    "description_text_color": "#CBD5F5",
-+                    "icon_view": "stacked",
-+                    "icon_shape": "circle",
-+                    "icon_color": "#38BDF8",
-+                    "selected_icon": {
-+                      "value": "fas fa-check",
-+                      "library": "fa-solid"
-+                    }
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "icon-box",
-+                  "elType": "widget"
-+                }
-+              ]
-+            }
-+          ]
-+        }
-+      ]
-+    },
-+    {
-+      "id": "reviews",
-+      "settings": {
-+        "background_background": "classic",
-+        "background_color": "#F8FAFC",
-+        "padding": {
-+          "unit": "px",
-+          "top": "110",
-+          "right": "0",
-+          "bottom": "110",
-+          "left": "0",
-+          "isLinked": false
-+        }
-+      },
-+      "elements": [
-+        {
-+          "id": "reviews-inner",
-+          "settings": {
-+            "content_width": "boxed",
-+            "boxed_width": {
-+              "unit": "px",
-+              "size": 1180,
-+              "sizes": []
-+            },
-+            "flex_direction": "column",
-+            "flex_gap": {
-+              "unit": "px",
-+              "size": 40,
-+              "column": "40",
-+              "row": "40",
-+              "isLinked": true
-+            }
-+          },
-+          "elements": [
-+            {
-+              "id": "reviews-title",
-+              "settings": {
-+                "title": "Histórias que iluminam",
-+                "align": "center",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Playfair Display",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 42,
-+                  "sizes": []
-+                },
-+                "title_color": "#0F172A"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "heading",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "reviews-cards",
-+              "settings": {
-+                "content_width": "full",
-+                "flex_direction": "row",
-+                "flex_wrap": "wrap",
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 28,
-+                  "column": "28",
-+                  "row": "28",
-+                  "isLinked": false
-+                },
-+                "flex_justify_content": "space-between"
-+              },
-+              "elements": [
-+                {
-+                  "id": "review-1",
-+                  "settings": {
-+                    "content_width": "full",
-+                    "width": {
-+                      "unit": "%",
-+                      "size": 32,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#FFFFFF",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "26",
-+                      "right": "26",
-+                      "bottom": "26",
-+                      "left": "26",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "32",
-+                      "right": "32",
-+                      "bottom": "32",
-+                      "left": "32",
-+                      "isLinked": true
-+                    },
-+                    "box_shadow_box_shadow": "yes",
-+                    "box_shadow_box_shadow_horizontal": 0,
-+                    "box_shadow_box_shadow_vertical": 18,
-+                    "box_shadow_box_shadow_blur": 50,
-+                    "box_shadow_box_shadow_spread": -24,
-+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.06)"
-+                  },
-+                  "elements": [
-+                    {
-+                      "id": "review-stars-1",
-+                      "settings": {
-+                        "editor": "<p>★★★★★</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Playfair Display",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 20,
-+                          "sizes": []
-+                        },
-+                        "color": "#F59E0B"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-quote-1",
-+                      "settings": {
-+                        "editor": "<p>Nunca imaginei me sentir tão tranquila em um consultório. O spa odontológico é real!</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 16,
-+                          "sizes": []
-+                        },
-+                        "color": "#334155"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-name-1",
-+                      "settings": {
-+                        "title": "Maria T.",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 18,
-+                          "sizes": []
-+                        },
-+                        "title_color": "#0F172A"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "heading",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-plan-1",
-+                      "settings": {
-+                        "editor": "<p>Luminous Smile</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 14,
-+                          "sizes": []
-+                        },
-+                        "color": "#1E40AF"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    }
-+                  ]
-+                },
-+                {
-+                  "id": "review-2",
-+                  "settings": {
-+                    "content_width": "full",
-+                    "width": {
-+                      "unit": "%",
-+                      "size": 32,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#FFFFFF",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "26",
-+                      "right": "26",
-+                      "bottom": "26",
-+                      "left": "26",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "32",
-+                      "right": "32",
-+                      "bottom": "32",
-+                      "left": "32",
-+                      "isLinked": true
-+                    },
-+                    "box_shadow_box_shadow": "yes",
-+                    "box_shadow_box_shadow_horizontal": 0,
-+                    "box_shadow_box_shadow_vertical": 18,
-+                    "box_shadow_box_shadow_blur": 50,
-+                    "box_shadow_box_shadow_spread": -24,
-+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.06)"
-+                  },
-+                  "elements": [
-+                    {
-+                      "id": "review-stars-2",
-+                      "settings": {
-+                        "editor": "<p>★★★★★</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Playfair Display",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 20,
-+                          "sizes": []
-+                        },
-+                        "color": "#F59E0B"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-quote-2",
-+                      "settings": {
-+                        "editor": "<p>Em 48h eu tinha implantes e um sorriso provisório perfeito. Atendimento impecável.</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 16,
-+                          "sizes": []
-+                        },
-+                        "color": "#334155"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-name-2",
-+                      "settings": {
-+                        "title": "Renato S.",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 18,
-+                          "sizes": []
-+                        },
-+                        "title_color": "#0F172A"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "heading",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-plan-2",
-+                      "settings": {
-+                        "editor": "<p>OdontoSignature</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 14,
-+                          "sizes": []
-+                        },
-+                        "color": "#1E40AF"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    }
-+                  ]
-+                },
-+                {
-+                  "id": "review-3",
-+                  "settings": {
-+                    "content_width": "full",
-+                    "width": {
-+                      "unit": "%",
-+                      "size": 32,
-+                      "sizes": []
-+                    },
-+                    "background_color": "#FFFFFF",
-+                    "border_radius": {
-+                      "unit": "px",
-+                      "top": "26",
-+                      "right": "26",
-+                      "bottom": "26",
-+                      "left": "26",
-+                      "isLinked": true
-+                    },
-+                    "padding": {
-+                      "unit": "px",
-+                      "top": "32",
-+                      "right": "32",
-+                      "bottom": "32",
-+                      "left": "32",
-+                      "isLinked": true
-+                    },
-+                    "box_shadow_box_shadow": "yes",
-+                    "box_shadow_box_shadow_horizontal": 0,
-+                    "box_shadow_box_shadow_vertical": 18,
-+                    "box_shadow_box_shadow_blur": 50,
-+                    "box_shadow_box_shadow_spread": -24,
-+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.06)"
-+                  },
-+                  "elements": [
-+                    {
-+                      "id": "review-stars-3",
-+                      "settings": {
-+                        "editor": "<p>★★★★★</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Playfair Display",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 20,
-+                          "sizes": []
-+                        },
-+                        "color": "#F59E0B"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-quote-3",
-+                      "settings": {
-+                        "editor": "<p>Os alinhadores invisíveis com acompanhamento remoto caberam na minha rotina intensa.</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 16,
-+                          "sizes": []
-+                        },
-+                        "color": "#334155"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-name-3",
-+                      "settings": {
-+                        "title": "Juliana M.",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 18,
-+                          "sizes": []
-+                        },
-+                        "title_color": "#0F172A"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "heading",
-+                      "elType": "widget"
-+                    },
-+                    {
-+                      "id": "review-plan-3",
-+                      "settings": {
-+                        "editor": "<p>Align360</p>",
-+                        "typography_typography": "custom",
-+                        "typography_font_family": "Poppins",
-+                        "typography_font_size": {
-+                          "unit": "px",
-+                          "size": 14,
-+                          "sizes": []
-+                        },
-+                        "color": "#1E40AF"
-+                      },
-+                      "elements": [],
-+                      "isInner": false,
-+                      "widgetType": "text-editor",
-+                      "elType": "widget"
-+                    }
-+                  ]
-+                }
-+              ]
-+            }
-+          ]
-+        }
-+      ]
-+    },
-+    {
-+      "id": "contact",
-+      "settings": {
-+        "background_background": "classic",
-+        "background_color": "#0F172A",
-+        "padding": {
-+          "unit": "px",
-+          "top": "120",
-+          "right": "0",
-+          "bottom": "120",
-+          "left": "0",
-+          "isLinked": false
-+        },
-+        "shape_divider_top": "waves",
-+        "shape_divider_top_color": "#FFFFFF"
-+      },
-+      "elements": [
-+        {
-+          "id": "contact-inner",
-+          "settings": {
-+            "content_width": "boxed",
-+            "boxed_width": {
-+              "unit": "px",
-+              "size": 960,
-+              "sizes": []
-+            },
-+            "flex_direction": "column",
-+            "flex_align_items": "center",
-+            "flex_gap": {
-+              "unit": "px",
-+              "size": 36,
-+              "column": "36",
-+              "row": "36",
-+              "isLinked": true
-+            }
-+          },
-+          "elements": [
-+            {
-+              "id": "contact-title",
-+              "settings": {
-+                "title": "Agende um diagnóstico digital gratuito",
-+                "align": "center",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Playfair Display",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 44,
-+                  "sizes": []
-+                },
-+                "title_color": "#F8FAFC"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "heading",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "contact-text",
-+              "settings": {
-+                "editor": "<p>Preencha seus dados que nossa concierge retornará em até 15 minutos em horário comercial.</p>",
-+                "align": "center",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 16,
-+                  "sizes": []
-+                },
-+                "color": "#CBD5F5"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "text-editor",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "contact-form",
-+              "settings": {
-+                "form_name": "Contato OdontoLume",
-+                "form_fields": [
-+                  {
-+                    "custom_id": "name",
-+                    "field_label": "Nome completo",
-+                    "placeholder": "Nome completo",
-+                    "required": "true",
-+                    "_id": "field_name"
-+                  },
-+                  {
-+                    "custom_id": "phone",
-+                    "field_type": "tel",
-+                    "field_label": "WhatsApp",
-+                    "placeholder": "DDD + WhatsApp",
-+                    "required": "true",
-+                    "_id": "field_phone"
-+                  },
-+                  {
-+                    "custom_id": "service",
-+                    "field_type": "select",
-+                    "field_label": "Tratamento de interesse",
-+                    "placeholder": "Selecione",
-+                    "field_options": "OdontoSignature\nLuminous Smile\nAlign360\nWellness Kids",
-+                    "required": "true",
-+                    "_id": "field_service"
-+                  },
-+                  {
-+                    "custom_id": "message",
-+                    "field_type": "textarea",
-+                    "field_label": "Compartilhe suas expectativas",
-+                    "placeholder": "Conte como podemos ajudar",
-+                    "_id": "field_message"
-+                  }
-+                ],
-+                "button_text": "Quero meu sorriso iluminado",
-+                "button_typography_typography": "custom",
-+                "button_typography_font_family": "Poppins",
-+                "button_typography_font_weight": "600",
-+                "button_background_color": "#38BDF8",
-+                "button_hover_background_color": "#0EA5E9",
-+                "button_border_radius": {
-+                  "unit": "px",
-+                  "top": "60",
-+                  "right": "60",
-+                  "bottom": "60",
-+                  "left": "60",
-+                  "isLinked": true
-+                },
-+                "field_background_color": "#1E293B",
-+                "field_border_radius": {
-+                  "unit": "px",
-+                  "top": "16",
-+                  "right": "16",
-+                  "bottom": "16",
-+                  "left": "16",
-+                  "isLinked": true
-+                },
-+                "field_typography_typography": "custom",
-+                "field_typography_font_family": "Poppins",
-+                "field_typography_font_size": {
-+                  "unit": "px",
-+                  "size": 15,
-+                  "sizes": []
-+                },
-+                "field_text_color": "#F8FAFC",
-+                "field_placeholder_color": "#94A3B8"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "form",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "contact-info",
-+              "settings": {
-+                "editor": "<p><i class=\"fas fa-map-marker-alt\"></i> Alameda Gabriel Monteiro, 455 • Jardim Europa</p>",
-+                "align": "center",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 15,
-+                  "sizes": []
-+                },
-+                "color": "#94A3B8"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "text-editor",
-+              "elType": "widget"
-+            }
-+          ]
-+        }
-+      ]
-+    },
-+    {
-+      "id": "footer",
-+      "settings": {
-+        "background_background": "classic",
-+        "background_color": "#FFFFFF",
-+        "padding": {
-+          "unit": "px",
-+          "top": "40",
-+          "right": "0",
-+          "bottom": "40",
-+          "left": "0",
-+          "isLinked": false
-+        }
-+      },
-+      "elements": [
-+        {
-+          "id": "footer-inner",
-+          "settings": {
-+            "content_width": "boxed",
-+            "boxed_width": {
-+              "unit": "px",
-+              "size": 1180,
-+              "sizes": []
-+            },
-+            "flex_direction": "row",
-+            "flex_justify_content": "space-between",
-+            "flex_align_items": "center"
-+          },
-+          "elements": [
-+            {
-+              "id": "footer-copy",
-+              "settings": {
-+                "editor": "<p>© 2025 OdontoLume • Todos os direitos reservados</p>",
-+                "typography_typography": "custom",
-+                "typography_font_family": "Poppins",
-+                "typography_font_size": {
-+                  "unit": "px",
-+                  "size": 14,
-+                  "sizes": []
-+                },
-+                "color": "#475569"
-+              },
-+              "elements": [],
-+              "isInner": false,
-+              "widgetType": "text-editor",
-+              "elType": "widget"
-+            },
-+            {
-+              "id": "footer-links",
-+              "settings": {
-+                "content_width": "auto",
-+                "flex_direction": "row",
-+                "flex_gap": {
-+                  "unit": "px",
-+                  "size": 20,
-+                  "column": "20",
-+                  "row": "20",
-+                  "isLinked": true
-+                }
-+              },
-+              "elements": [
-+                {
-+                  "id": "footer-instagram",
-+                  "settings": {
-+                    "text": "Instagram",
-+                    "link": {
-+                      "url": "https://instagram.com/odontolume",
-+                      "is_external": "yes",
-+                      "nofollow": ""
-+                    },
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_weight": "600",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 14,
-+                      "sizes": []
-+                    },
-+                    "text_color": "#1E40AF"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "button",
-+                  "elType": "widget"
-+                },
-+                {
-+                  "id": "footer-youtube",
-+                  "settings": {
-+                    "text": "YouTube",
-+                    "link": {
-+                      "url": "https://youtube.com/@odontolume",
-+                      "is_external": "yes",
-+                      "nofollow": ""
-+                    },
-+                    "typography_typography": "custom",
-+                    "typography_font_family": "Poppins",
-+                    "typography_font_weight": "600",
-+                    "typography_font_size": {
-+                      "unit": "px",
-+                      "size": 14,
-+                      "sizes": []
-+                    },
-+                    "text_color": "#1E40AF"
-+                  },
-+                  "elements": [],
-+                  "isInner": false,
-+                  "widgetType": "button",
-+                  "elType": "widget"
-+                }
-+              ],
-+              "isInner": true,
-+              "elType": "container"
-+            }
-+          ],
-+          "isInner": true,
-+          "elType": "container"
-+        }
-+      ]
-+    }
-+  ]
-+}
+{
+  "content": [
+    {
+      "id": "topbar",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1160,
+          "sizes": []
+        },
+        "flex_direction": "row",
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "12",
+          "right": "0",
+          "bottom": "12",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#0F172A"
+      },
+      "elements": [
+        {
+          "id": "topbar-left",
+          "settings": {
+            "content_width": "auto"
+          },
+          "elements": [
+            {
+              "id": "topbar-text",
+              "settings": {
+                "editor": "<p><strong>OdontoLume</strong> • Clínica boutique de sorrisos</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "color": "#E2E8F0"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "text-editor",
+              "elType": "widget"
+            }
+          ],
+          "isInner": true,
+          "elType": "container"
+        },
+        {
+          "id": "topbar-right",
+          "settings": {
+            "content_width": "auto",
+            "flex_direction": "row",
+            "flex_gap": {
+              "unit": "px",
+              "size": 18,
+              "column": "18",
+              "row": "18",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "topbar-phone",
+              "settings": {
+                "editor": "<p><i class=\"fas fa-phone-alt\"></i> (11) 4002-8922</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "color": "#38BDF8"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "text-editor",
+              "elType": "widget"
+            },
+            {
+              "id": "topbar-hours",
+              "settings": {
+                "editor": "<p><i class=\"fas fa-clock\"></i> Seg-Sáb • 7h às 21h</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "color": "#F8FAFC"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "text-editor",
+              "elType": "widget"
+            }
+          ],
+          "isInner": true,
+          "elType": "container"
+        }
+      ],
+      "isInner": false,
+      "elType": "container"
+    },
+    {
+      "id": "hero",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1180,
+          "sizes": []
+        },
+        "min_height": {
+          "unit": "px",
+          "size": 640,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "right": "0",
+          "bottom": "90",
+          "left": "0",
+          "isLinked": false
+        },
+        "flex_direction": "row",
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center",
+        "background_background": "gradient",
+        "background_color": "#0B1120",
+        "background_color_b": "#1E40AF",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 120,
+          "sizes": []
+        },
+        "shape_divider_bottom": "tilt",
+        "shape_divider_bottom_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "hero-left",
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 52,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "flex-start",
+            "flex_gap": {
+              "unit": "px",
+              "size": 28,
+              "column": "28",
+              "row": "28",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "hero-label",
+              "settings": {
+                "text": "Clínica boutique no coração de São Paulo",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "text_color": "#0F172A",
+                "background_color": "#F8FAFC",
+                "padding": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "20",
+                  "bottom": "10",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": true
+                }
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "button",
+              "elType": "widget"
+            },
+            {
+              "id": "hero-heading",
+              "settings": {
+                "title": "Transformamos o consultório em um spa do sorriso",
+                "typography_typography": "custom",
+                "typography_font_family": "Playfair Display",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 60,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1,
+                  "sizes": []
+                },
+                "title_color": "#F8FAFC"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "heading",
+              "elType": "widget"
+            },
+            {
+              "id": "hero-desc",
+              "settings": {
+                "editor": "<p>Equipe feminina multidisciplinar, sedação consciente, scanners 3D e protocolos autorais que unem estética, saúde e acolhimento.</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "color": "#E2E8F0"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "text-editor",
+              "elType": "widget"
+            },
+            {
+              "id": "hero-cta",
+              "settings": {
+                "content_width": "auto",
+                "flex_direction": "row",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 18,
+                  "column": "18",
+                  "row": "18",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "hero-primary",
+                  "settings": {
+                    "text": "Agendar avaliação VIP",
+                    "link": {
+                      "url": "https://wa.me/5511999999999?text=Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_weight": "600",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "background_color": "#38BDF8",
+                    "hover_background_color": "#0EA5E9",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "50",
+                      "right": "50",
+                      "bottom": "50",
+                      "left": "50",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "36",
+                      "bottom": "16",
+                      "left": "36",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "button",
+                  "elType": "widget"
+                },
+                {
+                  "id": "hero-secondary",
+                  "settings": {
+                    "text": "Tour virtual 360º",
+                    "link": {
+                      "url": "#tour",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_weight": "600",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "background_color": "rgba(15,23,42,0)",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": true
+                    },
+                    "border_color": "#38BDF8",
+                    "text_color": "#F8FAFC",
+                    "hover_text_color": "#0EA5E9",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "50",
+                      "right": "50",
+                      "bottom": "50",
+                      "left": "50",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "30",
+                      "bottom": "16",
+                      "left": "30",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "button",
+                  "elType": "widget"
+                }
+              ]
+            },
+            {
+              "id": "hero-stats",
+              "settings": {
+                "content_width": "auto",
+                "flex_direction": "row",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 24,
+                  "column": "24",
+                  "row": "24",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "stat-1",
+                  "settings": {
+                    "title": "+4200",
+                    "title_color": "#F8FAFC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 26,
+                      "sizes": []
+                    },
+                    "description_text": "Sorrisos redesenhados",
+                    "description_text_color": "#94A3B8"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "icon-box",
+                  "elType": "widget"
+                },
+                {
+                  "id": "stat-2",
+                  "settings": {
+                    "title": "98%",
+                    "title_color": "#F8FAFC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 26,
+                      "sizes": []
+                    },
+                    "description_text": "Índice de satisfação",
+                    "description_text_color": "#94A3B8"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "icon-box",
+                  "elType": "widget"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hero-right",
+          "settings": {
+            "content_width": "full",
+            "width": {
+              "unit": "%",
+              "size": 44,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "hero-photo",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
+                  "id": 1,
+                  "size": "",
+                  "alt": "Dentista com paciente",
+                  "source": "library"
+                },
+                "image_size": "full",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": true
+                }
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "image",
+              "elType": "widget"
+            },
+            {
+              "id": "hero-card",
+              "settings": {
+                "content_width": "full",
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "-60",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "hero-card-title",
+                  "settings": {
+                    "title": "Consulta acolhedora",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "title_color": "#0F172A"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "heading",
+                  "elType": "widget"
+                },
+                {
+                  "id": "hero-card-text",
+                  "settings": {
+                    "editor": "<p>Espaço sensorial, manta térmica, playlist personalizada e aromaterapia para cada perfil.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "color": "#475569"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "text-editor",
+                  "elType": "widget"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F8FAFC",
+        "padding": {
+          "unit": "px",
+          "top": "110",
+          "right": "0",
+          "bottom": "110",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "services-inner",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1180,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "unit": "px",
+              "size": 48,
+              "column": "48",
+              "row": "48",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "services-header",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 16,
+                  "column": "16",
+                  "row": "16",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "services-label",
+                  "settings": {
+                    "text": "Protocolos exclusivos",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "text_color": "#1E40AF",
+                    "background_color": "rgba(30,64,175,0.12)",
+                    "padding": {
+                      "unit": "px",
+                      "top": "8",
+                      "right": "20",
+                      "bottom": "8",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "30",
+                      "right": "30",
+                      "bottom": "30",
+                      "left": "30",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "button",
+                  "elType": "widget"
+                },
+                {
+                  "id": "services-title",
+                  "settings": {
+                    "title": "Planos desenhados para a sua rotina",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Playfair Display",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 44,
+                      "sizes": []
+                    },
+                    "title_color": "#0F172A"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "heading",
+                  "elType": "widget"
+                },
+                {
+                  "id": "services-text",
+                  "settings": {
+                    "editor": "<p>Da prevenção à reabilitação total, unimos ciência e sensibilidade para entregar resultados duradouros.</p>",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "color": "#475569"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "text-editor",
+                  "elType": "widget"
+                }
+              ]
+            },
+            {
+              "id": "services-cards",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 28,
+                  "column": "28",
+                  "row": "28",
+                  "isLinked": false
+                },
+                "flex_justify_content": "space-between"
+              },
+              "elements": [
+                {
+                  "id": "service-card-1",
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 48,
+                      "sizes": []
+                    },
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow": "yes",
+                    "box_shadow_box_shadow_horizontal": 0,
+                    "box_shadow_box_shadow_vertical": 18,
+                    "box_shadow_box_shadow_blur": 50,
+                    "box_shadow_box_shadow_spread": -24,
+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
+                  },
+                  "elements": [
+                    {
+                      "id": "service-icon-1",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-tooth",
+                          "library": "fa-solid"
+                        },
+                        "icon_color": "#1E40AF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 36,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "icon",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-title-1",
+                      "settings": {
+                        "title": "OdontoSignature",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 22,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "title_color": "#0F172A"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-desc-1",
+                      "settings": {
+                        "editor": "<p>Reabilitação oral com implantes guiados, coroas CAD/CAM e acompanhamento fotográfico profissional.</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "color": "#475569"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    }
+                  ]
+                },
+                {
+                  "id": "service-card-2",
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 48,
+                      "sizes": []
+                    },
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow": "yes",
+                    "box_shadow_box_shadow_horizontal": 0,
+                    "box_shadow_box_shadow_vertical": 18,
+                    "box_shadow_box_shadow_blur": 50,
+                    "box_shadow_box_shadow_spread": -24,
+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
+                  },
+                  "elements": [
+                    {
+                      "id": "service-icon-2",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-smile-beam",
+                          "library": "fa-solid"
+                        },
+                        "icon_color": "#1E40AF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 36,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "icon",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-title-2",
+                      "settings": {
+                        "title": "Luminous Smile",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 22,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "title_color": "#0F172A"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-desc-2",
+                      "settings": {
+                        "editor": "<p>Lentes de contato cerâmicas ultrafinas, mockup digital e test-drive estético.</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "color": "#475569"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    }
+                  ]
+                },
+                {
+                  "id": "service-card-3",
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 48,
+                      "sizes": []
+                    },
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow": "yes",
+                    "box_shadow_box_shadow_horizontal": 0,
+                    "box_shadow_box_shadow_vertical": 18,
+                    "box_shadow_box_shadow_blur": 50,
+                    "box_shadow_box_shadow_spread": -24,
+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
+                  },
+                  "elements": [
+                    {
+                      "id": "service-icon-3",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-teeth-open",
+                          "library": "fa-solid"
+                        },
+                        "icon_color": "#1E40AF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 36,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "icon",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-title-3",
+                      "settings": {
+                        "title": "Align360",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 22,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "title_color": "#0F172A"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-desc-3",
+                      "settings": {
+                        "editor": "<p>Alinhadores invisíveis com check-ins virtuais, sensores inteligentes e IA para ajustes.</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "color": "#475569"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    }
+                  ]
+                },
+                {
+                  "id": "service-card-4",
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 48,
+                      "sizes": []
+                    },
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow": "yes",
+                    "box_shadow_box_shadow_horizontal": 0,
+                    "box_shadow_box_shadow_vertical": 18,
+                    "box_shadow_box_shadow_blur": 50,
+                    "box_shadow_box_shadow_spread": -24,
+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.08)"
+                  },
+                  "elements": [
+                    {
+                      "id": "service-icon-4",
+                      "settings": {
+                        "selected_icon": {
+                          "value": "fas fa-child",
+                          "library": "fa-solid"
+                        },
+                        "icon_color": "#1E40AF",
+                        "icon_size": {
+                          "unit": "px",
+                          "size": 36,
+                          "sizes": []
+                        }
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "icon",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-title-4",
+                      "settings": {
+                        "title": "Wellness Kids",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 22,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "title_color": "#0F172A"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "service-desc-4",
+                      "settings": {
+                        "editor": "<p>Odontopediatria lúdica, sedação inalatória e educação digital para famílias.</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "color": "#475569"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "journey",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "0",
+          "bottom": "100",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "journey-inner",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1180,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_gap": {
+              "unit": "px",
+              "size": 48,
+              "column": "48",
+              "row": "48",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "journey-left",
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 46,
+                  "sizes": []
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20,
+                  "column": "20",
+                  "row": "20",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "journey-title",
+                  "settings": {
+                    "title": "Uma jornada desenhada para você relaxar",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Playfair Display",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 42,
+                      "sizes": []
+                    },
+                    "title_color": "#0F172A"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "heading",
+                  "elType": "widget"
+                },
+                {
+                  "id": "journey-text",
+                  "settings": {
+                    "editor": "<p>Nosso concierge acompanha cada etapa com atenção plena, enquanto tecnologias silenciosas e ambientes sensoriais garantem uma experiência memorável.</p>",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "color": "#475569"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "text-editor",
+                  "elType": "widget"
+                },
+                {
+                  "id": "journey-cta",
+                  "settings": {
+                    "text": "Falar com concierge",
+                    "link": {
+                      "url": "https://wa.me/5511999999999?text=Gostaria%20de%20saber%20mais%20sobre%20a%20experi%C3%AAncia%20OdontoLume",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_weight": "600",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "background_color": "#0F172A",
+                    "hover_background_color": "#1E293B",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "50",
+                      "right": "50",
+                      "bottom": "50",
+                      "left": "50",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "16",
+                      "right": "34",
+                      "bottom": "16",
+                      "left": "34",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "button",
+                  "elType": "widget"
+                }
+              ]
+            },
+            {
+              "id": "journey-right",
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 54,
+                  "sizes": []
+                },
+                "flex_direction": "column",
+                "background_background": "classic",
+                "background_color": "#0F172A",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "32",
+                  "right": "32",
+                  "bottom": "32",
+                  "left": "32",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": true
+                },
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 28,
+                  "column": "28",
+                  "row": "28",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "journey-step-1",
+                  "settings": {
+                    "title": "Recepção com spa sensorial",
+                    "title_color": "#F8FAFC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "description_text": "Check-in com chás autorais, óleos essenciais e personalização do ambiente.",
+                    "description_text_color": "#CBD5F5",
+                    "icon_view": "stacked",
+                    "icon_shape": "circle",
+                    "icon_color": "#38BDF8",
+                    "selected_icon": {
+                      "value": "fas fa-check",
+                      "library": "fa-solid"
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "icon-box",
+                  "elType": "widget"
+                },
+                {
+                  "id": "journey-step-2",
+                  "settings": {
+                    "title": "Diagnóstico holístico",
+                    "title_color": "#F8FAFC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "description_text": "Scanner intraoral, raio-x panorâmico silencioso e análise postural.",
+                    "description_text_color": "#CBD5F5",
+                    "icon_view": "stacked",
+                    "icon_shape": "circle",
+                    "icon_color": "#38BDF8",
+                    "selected_icon": {
+                      "value": "fas fa-check",
+                      "library": "fa-solid"
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "icon-box",
+                  "elType": "widget"
+                },
+                {
+                  "id": "journey-step-3",
+                  "settings": {
+                    "title": "Plano contínuo",
+                    "title_color": "#F8FAFC",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "description_text": "Aplicativo exclusivo, teleconsultas e revisões sem custo por 12 meses.",
+                    "description_text_color": "#CBD5F5",
+                    "icon_view": "stacked",
+                    "icon_shape": "circle",
+                    "icon_color": "#38BDF8",
+                    "selected_icon": {
+                      "value": "fas fa-check",
+                      "library": "fa-solid"
+                    }
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "icon-box",
+                  "elType": "widget"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reviews",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F8FAFC",
+        "padding": {
+          "unit": "px",
+          "top": "110",
+          "right": "0",
+          "bottom": "110",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "reviews-inner",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1180,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "unit": "px",
+              "size": 40,
+              "column": "40",
+              "row": "40",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "reviews-title",
+              "settings": {
+                "title": "Histórias que iluminam",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Playfair Display",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42,
+                  "sizes": []
+                },
+                "title_color": "#0F172A"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "heading",
+              "elType": "widget"
+            },
+            {
+              "id": "reviews-cards",
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 28,
+                  "column": "28",
+                  "row": "28",
+                  "isLinked": false
+                },
+                "flex_justify_content": "space-between"
+              },
+              "elements": [
+                {
+                  "id": "review-1",
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow": "yes",
+                    "box_shadow_box_shadow_horizontal": 0,
+                    "box_shadow_box_shadow_vertical": 18,
+                    "box_shadow_box_shadow_blur": 50,
+                    "box_shadow_box_shadow_spread": -24,
+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.06)"
+                  },
+                  "elements": [
+                    {
+                      "id": "review-stars-1",
+                      "settings": {
+                        "editor": "<p>★★★★★</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Playfair Display",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 20,
+                          "sizes": []
+                        },
+                        "color": "#F59E0B"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-quote-1",
+                      "settings": {
+                        "editor": "<p>Nunca imaginei me sentir tão tranquila em um consultório. O spa odontológico é real!</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "color": "#334155"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-name-1",
+                      "settings": {
+                        "title": "Maria T.",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 18,
+                          "sizes": []
+                        },
+                        "title_color": "#0F172A"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-plan-1",
+                      "settings": {
+                        "editor": "<p>Luminous Smile</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14,
+                          "sizes": []
+                        },
+                        "color": "#1E40AF"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    }
+                  ]
+                },
+                {
+                  "id": "review-2",
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow": "yes",
+                    "box_shadow_box_shadow_horizontal": 0,
+                    "box_shadow_box_shadow_vertical": 18,
+                    "box_shadow_box_shadow_blur": 50,
+                    "box_shadow_box_shadow_spread": -24,
+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.06)"
+                  },
+                  "elements": [
+                    {
+                      "id": "review-stars-2",
+                      "settings": {
+                        "editor": "<p>★★★★★</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Playfair Display",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 20,
+                          "sizes": []
+                        },
+                        "color": "#F59E0B"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-quote-2",
+                      "settings": {
+                        "editor": "<p>Em 48h eu tinha implantes e um sorriso provisório perfeito. Atendimento impecável.</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "color": "#334155"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-name-2",
+                      "settings": {
+                        "title": "Renato S.",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 18,
+                          "sizes": []
+                        },
+                        "title_color": "#0F172A"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-plan-2",
+                      "settings": {
+                        "editor": "<p>OdontoSignature</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14,
+                          "sizes": []
+                        },
+                        "color": "#1E40AF"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    }
+                  ]
+                },
+                {
+                  "id": "review-3",
+                  "settings": {
+                    "content_width": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "32",
+                      "right": "32",
+                      "bottom": "32",
+                      "left": "32",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow": "yes",
+                    "box_shadow_box_shadow_horizontal": 0,
+                    "box_shadow_box_shadow_vertical": 18,
+                    "box_shadow_box_shadow_blur": 50,
+                    "box_shadow_box_shadow_spread": -24,
+                    "box_shadow_box_shadow_color": "rgba(15,23,42,0.06)"
+                  },
+                  "elements": [
+                    {
+                      "id": "review-stars-3",
+                      "settings": {
+                        "editor": "<p>★★★★★</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Playfair Display",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 20,
+                          "sizes": []
+                        },
+                        "color": "#F59E0B"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-quote-3",
+                      "settings": {
+                        "editor": "<p>Os alinhadores invisíveis com acompanhamento remoto caberam na minha rotina intensa.</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16,
+                          "sizes": []
+                        },
+                        "color": "#334155"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-name-3",
+                      "settings": {
+                        "title": "Juliana M.",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 18,
+                          "sizes": []
+                        },
+                        "title_color": "#0F172A"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "heading",
+                      "elType": "widget"
+                    },
+                    {
+                      "id": "review-plan-3",
+                      "settings": {
+                        "editor": "<p>Align360</p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 14,
+                          "sizes": []
+                        },
+                        "color": "#1E40AF"
+                      },
+                      "elements": [],
+                      "isInner": false,
+                      "widgetType": "text-editor",
+                      "elType": "widget"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#0F172A",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "0",
+          "bottom": "120",
+          "left": "0",
+          "isLinked": false
+        },
+        "shape_divider_top": "waves",
+        "shape_divider_top_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "contact-inner",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 960,
+              "sizes": []
+            },
+            "flex_direction": "column",
+            "flex_align_items": "center",
+            "flex_gap": {
+              "unit": "px",
+              "size": 36,
+              "column": "36",
+              "row": "36",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "contact-title",
+              "settings": {
+                "title": "Agende um diagnóstico digital gratuito",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Playfair Display",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44,
+                  "sizes": []
+                },
+                "title_color": "#F8FAFC"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "heading",
+              "elType": "widget"
+            },
+            {
+              "id": "contact-text",
+              "settings": {
+                "editor": "<p>Preencha seus dados que nossa concierge retornará em até 15 minutos em horário comercial.</p>",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "color": "#CBD5F5"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "text-editor",
+              "elType": "widget"
+            },
+            {
+              "id": "contact-form",
+              "settings": {
+                "form_name": "Contato OdontoLume",
+                "form_fields": [
+                  {
+                    "custom_id": "name",
+                    "field_label": "Nome completo",
+                    "placeholder": "Nome completo",
+                    "required": "true",
+                    "_id": "field_name"
+                  },
+                  {
+                    "custom_id": "phone",
+                    "field_type": "tel",
+                    "field_label": "WhatsApp",
+                    "placeholder": "DDD + WhatsApp",
+                    "required": "true",
+                    "_id": "field_phone"
+                  },
+                  {
+                    "custom_id": "service",
+                    "field_type": "select",
+                    "field_label": "Tratamento de interesse",
+                    "placeholder": "Selecione",
+                    "field_options": "OdontoSignature\nLuminous Smile\nAlign360\nWellness Kids",
+                    "required": "true",
+                    "_id": "field_service"
+                  },
+                  {
+                    "custom_id": "message",
+                    "field_type": "textarea",
+                    "field_label": "Compartilhe suas expectativas",
+                    "placeholder": "Conte como podemos ajudar",
+                    "_id": "field_message"
+                  }
+                ],
+                "button_text": "Quero meu sorriso iluminado",
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Poppins",
+                "button_typography_font_weight": "600",
+                "button_background_color": "#38BDF8",
+                "button_hover_background_color": "#0EA5E9",
+                "button_border_radius": {
+                  "unit": "px",
+                  "top": "60",
+                  "right": "60",
+                  "bottom": "60",
+                  "left": "60",
+                  "isLinked": true
+                },
+                "field_background_color": "#1E293B",
+                "field_border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "field_typography_typography": "custom",
+                "field_typography_font_family": "Poppins",
+                "field_typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "field_text_color": "#F8FAFC",
+                "field_placeholder_color": "#94A3B8"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "form",
+              "elType": "widget"
+            },
+            {
+              "id": "contact-info",
+              "settings": {
+                "editor": "<p><i class=\"fas fa-map-marker-alt\"></i> Alameda Gabriel Monteiro, 455 • Jardim Europa</p>",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "color": "#94A3B8"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "text-editor",
+              "elType": "widget"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "0",
+          "bottom": "40",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "footer-inner",
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1180,
+              "sizes": []
+            },
+            "flex_direction": "row",
+            "flex_justify_content": "space-between",
+            "flex_align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "footer-copy",
+              "settings": {
+                "editor": "<p>© 2025 OdontoLume • Todos os direitos reservados</p>",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "color": "#475569"
+              },
+              "elements": [],
+              "isInner": false,
+              "widgetType": "text-editor",
+              "elType": "widget"
+            },
+            {
+              "id": "footer-links",
+              "settings": {
+                "content_width": "auto",
+                "flex_direction": "row",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20,
+                  "column": "20",
+                  "row": "20",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "footer-instagram",
+                  "settings": {
+                    "text": "Instagram",
+                    "link": {
+                      "url": "https://instagram.com/odontolume",
+                      "is_external": "yes",
+                      "nofollow": ""
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_weight": "600",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "text_color": "#1E40AF"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "button",
+                  "elType": "widget"
+                },
+                {
+                  "id": "footer-youtube",
+                  "settings": {
+                    "text": "YouTube",
+                    "link": {
+                      "url": "https://youtube.com/@odontolume",
+                      "is_external": "yes",
+                      "nofollow": ""
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_weight": "600",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14,
+                      "sizes": []
+                    },
+                    "text_color": "#1E40AF"
+                  },
+                  "elements": [],
+                  "isInner": false,
+                  "widgetType": "button",
+                  "elType": "widget"
+                }
+              ],
+              "isInner": true,
+              "elType": "container"
+            }
+          ],
+          "isInner": true,
+          "elType": "container"
+        }
+      ]
+    }
+  ]
+}
